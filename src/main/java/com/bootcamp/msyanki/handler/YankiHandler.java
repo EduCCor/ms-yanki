@@ -98,6 +98,7 @@ public class YankiHandler {
                     db.setEmail(req.getEmail());
                     db.setNroPhone(req.getNroPhone());
                     db.setImeiPhone((req.getImeiPhone()));
+                    db.setAmountYanki(req.getAmountYanki());
                     return db;
                 }).flatMap( c -> ServerResponse
                         .ok()
